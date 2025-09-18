@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  height: 10vh !important;
+  max-height: 10vh;
+  min-height: 10vh;
+}
+
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1vh auto;
+  text-align: center;
+}
+
+nav,
+nav:hover {
+  margin: 1vh 2vw;
+  text-align: left;
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 1vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: darkgray;
+  transition: color 0.3s ease;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 5vw;
+  padding: 0;
+  width: 100vw;
+}
+
+main > * {
+  margin: 0 3vw;
+  width: 35vw;
+}
+
+#greeting {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+form h1 {
+  font-size: 50px;
+}
+
+form p {
+  font-size: 18px;
+  color: rgb(168, 168, 168);
+  margin-bottom: 3vh;
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 2vh;
+  margin-top: 0.5vh;
+  height: 4vh;
+  width: 35vw;
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 6px;
+}
+
+textarea {
+  height: 15vh;
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  margin-top: 0.5vh;
+  width: 35vw;
+}
+
+button {
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 1.3vh;
+  width: 13vw;
+  transition: background-color 0.3s ease;
+  margin-top: 3vh;
+  border-radius: 6px;
+  border: none;
+}
+
+button:hover {
+  background-color: darkgray;
+  transition: background-color 0.3 ease;
+}
+
+#contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  width: 45vw;
+  height: 63vh;
+}
+
+#contact-details h1 {
+  margin-bottom: 4vh;
+}
+
+#contact-details p {
+  margin-bottom: 4vh;
+  margin-top: 0.8vh;
+  font-size: 14px;
+}

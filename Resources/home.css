@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  height: 10vh !important;
+  max-height: 10vh;
+  min-height: 10vh;
+}
+
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1vh auto;
+  text-align: center;
+}
+
+nav,
+nav:hover {
+  margin: 1vh 2vw;
+  text-align: left;
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 1vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: darkgray;
+  transition: color 0.3s ease;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  height: 82vh;
+  width: auto;
+  max-width: 50vw;
+  object-fit: cover;
+  display: block;
+}
+
+#text-content {
+  text-align: left;
+  padding: 2vw 4vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 4vw;
+  margin-bottom: 1vh;
+  font-size: clamp(20px, 4vw, 60px);
+}
+
+h3 {
+  color: rgb(110, 110, 110);
+  font-size: 2vw;
+  margin-bottom: 4vh;
+}
+
+#start-reading {
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 2vh 6vw;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+#start-reading:hover {
+  background-color: rgb(61, 61, 61);
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2vh 0;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 3.5vw;
+  }
+
+  h3 {
+    font-size: 1.8vw;
+  }
+
+  nav a {
+    font-size: 1.3vw;
+  }
+
+  #start-reading {
+    font-size: 1.1vw;
+    padding: 1.5vh 5vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  nav a {
+    font-size: 24px;
+  }
+
+  #start-reading {
+    font-size: 18px;
+  }
+}

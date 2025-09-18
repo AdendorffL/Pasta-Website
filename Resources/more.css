@@ -138,3 +138,37 @@ article p {
   text-align: left;
   margin-bottom: 1vh;
 }
+
+@media screen and (max-width: 950px) {
+  .header-container {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    font-size: 3vw;
+    margin-bottom: 35px;
+  }
+
+  nav a {
+    font-size: 4.5vw;
+    margin: 10px 30px;
+  }
+
+  #intro h1 {
+    font-size: 8vw;
+  }
+
+  figure img {
+    width: 100vw;
+    height: auto;
+  }
+
+  article {
+    max-width: 90vw;
+  }
+
+  .pasta-type {
+    width: 70vw;
+    height: 30vh;
+  }
+}

@@ -27,7 +27,6 @@ body {
   width: 100%;
   align-items: center;
   position: relative;
-  height: 10vh !important;
   max-height: 10vh;
   min-height: 10vh;
 }
@@ -154,4 +153,76 @@ button:hover {
   margin-bottom: 4vh;
   margin-top: 0.8vh;
   font-size: 14px;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    overflow: scroll;
+  }
+
+  .header-container {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    font-size: 3vw;
+    margin-bottom: 35px;
+  }
+
+  nav a {
+    font-size: 4.5vw;
+    margin: 10px 30px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100vw;
+  }
+
+  #contact-details {
+    width: 100vw;
+    height: fit-content;
+  }
+
+  form {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  form h1 {
+    font-size: 13vw;
+    line-height: 8vh;
+  }
+
+  form p {
+    width: 80vw;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  input {
+    width: 80vw;
+    margin: 0;
+    margin-top: -15px;
+  }
+
+  textarea {
+    width: 80vw;
+    margin: 0;
+    margin-top: -15px;
+  }
+
+  button {
+    width: 50vw;
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
 }
